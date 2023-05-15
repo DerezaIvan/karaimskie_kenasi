@@ -336,7 +336,7 @@ body {
     color: rgb(254, 122, 0);
     line-height: 1.2;
     position: absolute;
-    top: 32%;
+    top: 30%;
     left: 80%;
 }
 
@@ -378,7 +378,7 @@ body {
 
 .story-start-timeline {
     position: absolute;
-    top: 11%;
+    top: 10%;
     left: 41%;
 }
 
@@ -420,7 +420,7 @@ body {
 
 .war-image {
     position: absolute;
-    top: 12%;
+    top: 11%;
     left: 5%;
 }
 
@@ -453,7 +453,7 @@ body {
     font-family: "Open Sans", sans-serif;
     color: rgb(254, 122, 0);
     font-weight: bold;
-    padding-top: 100px;
+    padding-top: 107px;
     margin-left: 425px;
     text-transform: uppercase;
 }
@@ -547,8 +547,8 @@ body {
 
 .supervisor-circle {
     position: absolute;
-    right: 507px;
-    top: 185px;
+    right: 505px;
+    top: 182px;
 }
 
 .supervisor-avatar {
