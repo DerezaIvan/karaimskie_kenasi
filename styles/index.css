@@ -1110,7 +1110,7 @@ body {
     cursor: pointer;
 }
 
-.excursions {
+.map-complex-excursions {
     display: flex;
     justify-content: space-evenly;
     padding-top: 340px;
