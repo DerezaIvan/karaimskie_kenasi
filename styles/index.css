@@ -934,9 +934,6 @@ body {
 
 /* Стили блока Memorial */
 
-.memorial {
-}
-
 .memorial .container {
   position: relative;
 }
@@ -989,8 +986,6 @@ body {
 }
 /* Стили блока Know */
 
-.know {
-}
 .know .container {
   position: relative;
 }

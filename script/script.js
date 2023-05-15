@@ -1,3 +1,5 @@
+// Скрипт для работы слайдера
+
 $(".slider").slick({
   dots: true,
   infinite: true,
