@@ -745,6 +745,9 @@ body {
     text-transform: none;
     font-weight: normal;
     padding-top: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
 }
 
 .peculiarities-list-item:first-child {
