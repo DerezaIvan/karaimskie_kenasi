@@ -713,7 +713,8 @@ body {
 .peculiarities .container {
     display: flex;
     justify-content: space-around;
-    position: relative;>
+    position: relative;
+>
 }
 
 .peculiarities-title {
@@ -888,6 +889,8 @@ body {
 }
 
 /* Стили блока Marble */
+
+
 .marble {
     padding-top: 50px;
     padding-bottom: 140px;
@@ -1049,4 +1052,211 @@ body {
 
 .header.excursions-bckg {
     background-color: #373c3c;
+}
+
+.header.excursions-bckg .story-image {
+    padding-bottom: 30px;
+}
+
+/* Стили блока Map */
+
+.map-complex-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.map-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-item-title {
+    font-size: 60px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(254, 121, 0);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 130px;
+}
+
+.map-img {
+    padding-top: 130px;
+}
+
+.map-item-btn {
+    padding-top: 184px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 43px;
+}
+
+.btn {
+    font-size: 36px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(55, 61, 61);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 50px 20px;
+    background-color: transparent;
+    border-radius: 70px;
+    text-align: left;
+    transition: transform .5s ease;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.excursions {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 340px;
+    position: relative;
+}
+
+.excursions-text {
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(55, 61, 61);
+    line-height: 1.2;
+    text-align: left;
+    max-width: 870px;
+}
+
+.excursions-time-item {
+    font-size: 36px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 123, 0);
+    font-weight: bold;
+    line-height: 1.2;
+    padding-top: 270px;
+    max-width: 385px;
+    margin: 0 auto;
+}
+
+.excursions-time-item:last-of-type {
+    padding-top: 135px;
+}
+
+.excursions-price {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.price-title {
+    font-size: 48px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 123, 0);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price-cards {
+    display: flex;
+    align-items: flex-end;
+    gap: 150px;
+    padding-top: 90px;
+}
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-card-text {
+    font-size: 36px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 123, 0);
+    font-weight: bold;
+    line-height: 1.2;
+    padding-top: 65px;
+}
+
+.price-card-text:last-of-type {
+    padding-top: 145px;
+}
+
+.price-cards-btn {
+    font-size: 28px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(241, 235, 226);
+    font-weight: bold;
+    line-height: 1.2;
+    background-color: #373c3c;
+    padding: 30px 15px;
+    border-radius: 50px;
+    margin-top: 90px;
+}
+
+.exucrsions-circle {
+    position: absolute;
+    right: 0;
+    top: 27%;
+}
+
+.mode {
+    padding-top: 170px;
+    position: relative;
+}
+
+.mode-title {
+    font-size: 60px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(254, 121, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 245px;
+
+}
+
+.mode-btn {
+    display: flex;
+    column-gap: 730px;
+    justify-content: center;
+    padding-top: 125px;
+    padding-bottom: 350px;
+}
+
+.mode-btn-time {
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(241, 235, 226);
+    font-weight: bold;
+    line-height: 1.2;
+    border-radius: 100px;
+    border: none;
+    max-width: 400px;
+    padding: 20px 40px 40px;
+}
+
+.mode-btn-time.winter {
+    background-color: #373c3c;
+
+}
+
+.mode-btn-time.summer {
+    background-color: #ee9d58;
+}
+
+.mode-btn-time span {
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(241, 235, 226);
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.mode-circle {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    z-index: -1;
 }
