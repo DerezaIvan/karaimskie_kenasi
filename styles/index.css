@@ -19,6 +19,31 @@
     src: url("../vendor/fonts/FoglihtenNo06_076.otf");
 }
 
+/* Стиль печатющей машинки */
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid transparent;
+    white-space: nowrap;
+    animation: typing 5s steps(50, end) forwards;
+    font-size: 1.6rem;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* Стиль курсора при печатании текста */
+:root {
+    --ti-cursor-color: rgba(30, 144, 255, 0);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -124,6 +149,12 @@ body {
     padding: 60px 0 70px 75px;
     max-height: 200px;
     text-align: inherit;
+    transition: all .5s ease;
+}
+
+.ladder-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .ladder-btn.architecture {
@@ -170,7 +201,6 @@ body {
 
 .quote-text {
     display: flex;
-    flex-direction: column;
     align-items: center;
     max-width: 920px;
     position: absolute;
@@ -184,6 +214,8 @@ body {
     color: rgb(254, 122, 0);
     font-weight: normal;
     line-height: 1.3;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote-author {
@@ -195,6 +227,10 @@ body {
     padding-top: 80px;
     margin-right: 35px;
     align-self: end;
+}
+
+#7185416.ti-cursor {
+    display: none;
 }
 
 /* Стили секции FOOTER */
@@ -406,6 +442,7 @@ body {
     font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .war-text-subtitle {
@@ -495,6 +532,7 @@ body {
     column-gap: 20px;
     padding-top: 85px;
     margin-left: 120px;
+    position: relative;
 }
 
 .soviet-content-card {
@@ -506,6 +544,116 @@ body {
     height: 15px;
     border-radius: 50%;
     background-color: #fd7900;
+}
+
+.soviet-die-museum {
+    max-width: 300px;
+    border: 1px solid black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 102%;
+    left: 9%;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.soviet-content-card.museum:hover {
+    cursor: pointer;
+}
+
+.soviet-content-card.museum:hover + .soviet-die-museum {
+    opacity: 1;
+}
+
+.soviet-die-gym {
+    max-width: 300px;
+    border: 1px solid black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 102%;
+    left: 25%;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.soviet-content-card.gym:hover {
+    cursor: pointer;
+}
+
+.soviet-content-card.gym:hover + .soviet-die-gym {
+    opacity: 1;
+}
+
+.soviet-die-medical {
+    max-width: 300px;
+    border: 1px solid black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 105%;
+    left: 48%;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.soviet-content-card.medical:hover {
+    cursor: pointer;
+}
+
+.soviet-content-card.medical:hover + .soviet-die-medical {
+    opacity: 1;
+}
+
+.soviet-die-food {
+    max-width: 300px;
+    border: 1px solid black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 105%;
+    left: 68%;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.soviet-content-card.food:hover {
+    cursor: pointer;
+}
+
+.soviet-content-card.food:hover + .soviet-die-food {
+    opacity: 1;
+}
+
+.soviet-die-closed {
+    max-width: 300px;
+    border: 1px solid black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 108%;
+    left: 45%;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.soviet-content-card.closed:hover {
+    cursor: pointer;
+}
+
+.soviet-content-card.closed:hover + .soviet-die-closed {
+    opacity: 1;
 }
 
 /* Стили блока Supervisor */
@@ -598,6 +746,7 @@ body {
 .map-content {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .map-img {
@@ -622,10 +771,51 @@ body {
     padding-left: 120px;
 }
 
-.map-text p {
+.map-text-definition {
     font-size: 24px;
     font-family: "Open Sans", sans-serif;
     color: rgb(254, 121, 0);
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.map-text-img:hover {
+    cursor: pointer;
+}
+
+.map-text-img:hover + .map-text-definition {
+    opacity: 1;
+}
+
+.map-line {
+    position: absolute;
+    top: 40%;
+    right: 27%;
+    transform: rotate(0deg);
+}
+
+.fade-in {
+    max-width: 180px;
+    /*opacity: 0;*/
+    animation: slide-in 2s linear infinite;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Стили блока Castles */
@@ -702,6 +892,48 @@ body {
     top: 56%;
     left: 66%;
     z-index: 4;
+}
+
+.hover-die-one {
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    position: absolute;
+    top: 30%;
+    right: 48%;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.hover-die-two {
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.hover-die-one-text, .hover-die-two-text {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#castles-cirlce-stambul, #castles-cirlce-kenas:hover {
+    cursor: pointer;
+}
+
+#castles-cirlce-stambul:hover + .hover-die-one {
+    opacity: 1;
+}
+
+#castles-cirlce-kenas:hover + .hover-die-two {
+    opacity: 1;
 }
 
 /* Стили блока  Peculiarities */
@@ -832,7 +1064,8 @@ body {
 }
 
 .kenasa-scheme {
-    top: 450px;
+    top: 500px;
+    right: 50px;
     text-align: center;
     position: relative;
 }
@@ -845,6 +1078,33 @@ body {
     position: absolute;
     top: -7%;
     left: 62%;
+    z-index: 5;
+}
+
+.kenasa-sheme-die {
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    position: absolute;
+    top: -51%;
+    right: -55%;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.kenasa-sheme-die-text {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.kenasa-sheme-circle:hover {
+    cursor: pointer;
+}
+
+.kenasa-sheme-circle:hover + .kenasa-sheme-die {
+    opacity: 1;
 }
 
 /* Стили блока Ceiling */
@@ -974,13 +1234,13 @@ body {
 
 .memorial-card-time {
     position: absolute;
-    bottom: -110%;
+    bottom: -155%;
     right: 0;
 }
 
 .memorial-card-arch {
     position: absolute;
-    bottom: -220%;
+    bottom: -240%;
     left: 1%;
 }
 
@@ -992,16 +1252,69 @@ body {
     background-color: rgb(254, 122, 0);
 }
 
+
 .memorial-cirle-one {
     position: absolute;
-    bottom: -50%;
-    left: 98%;
+    bottom: -100%;
+    left: 93%;
+}
+
+.memorial-die-one {
+    max-width: 340px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 15px;
+    position: absolute;
+    bottom: -70%;
+    right: 0;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.memorial-die-one-text {
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.memorial-cirle-one:hover {
+    cursor: pointer;
+}
+
+.memorial-cirle-one:hover + .memorial-die-one {
+    opacity: 1;
 }
 
 .memorial-cirle-two {
     position: absolute;
-    bottom: -105%;
+    bottom: -130%;
     left: 40%;
+}
+
+.memorial-die-two {
+    max-width: 320px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 15px;
+    position: absolute;
+    bottom: -100%;
+    right: 48%;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.memorial-die-two-text {
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.memorial-cirle-two:hover {
+    cursor: pointer;
+}
+
+.memorial-cirle-two:hover + .memorial-die-two {
+    opacity: 1;
 }
 
 /* Стили блока Know */
@@ -1039,10 +1352,19 @@ body {
     font-weight: bold;
     line-height: 1.2;
     background-color: #373c3c;
+    border: none;
     padding: 30px;
     border-radius: 50px;
     margin-top: 65px;
     max-width: 320px;
+    transition: background-color .5s ease;
+    position: relative;
+    z-index: 5;
+}
+
+.know-btn:hover {
+    background-color: rgb(255, 123, 0);
+    cursor: pointer;
 }
 
 .know-circle {
@@ -1195,6 +1517,15 @@ body {
     padding: 30px 15px;
     border-radius: 50px;
     margin-top: 90px;
+    border: none;
+    position: relative;
+    z-index: 5;
+    transition: background-color .5s ease;
+}
+
+.price-cards-btn:hover {
+    background-color: rgb(255, 123, 0);
+    cursor: pointer;
 }
 
 .exucrsions-circle {

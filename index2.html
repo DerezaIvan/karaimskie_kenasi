@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="slider/slick-theme.css"/>
     <link rel="stylesheet" href="slider/slick.css"/>
+    <link rel="stylesheet" href="styles/animate.min.css">
     <link rel="stylesheet" href="styles/index.css"/>
     <title>История</title>
 </head>
@@ -35,7 +36,7 @@
             </ul>
         </nav>
     </div>
-    <div class="story">
+    <div class="story wow fadeIn">
         <div class="story-image">
             <img src="images/круг-история.png" alt="Круг"/>
         </div>
@@ -46,13 +47,13 @@
     <div class="container">
         <div class="story-start-item">
             <div class="story-start-item-text">
-                <h2 class="story-start-item-text-title">С чего все начиналось?</h2>
-                <p class="story-start-item-text-subtitle">
+                <h2 class="story-start-item-text-title typed-out">С чего все начиналось?</h2>
+                <p class="story-start-item-text-subtitle wow fadeInLeft">
                     Караимские кенасы – памятник архитектуры, представляющий собой
                     храмовый молитвенный комплекс крымских караимов, который входит в
                     знаменитый экскурсионный маршрут «Малый Иерусалим».
                 </p>
-                <p class="story-start-item-text-subtitle">
+                <p class="story-start-item-text-subtitle wow fadeInLeft">
                     Караимские кенасы в Евпатории были построены в XIX веке, когда в
                     сюда переселились караимы из пещерного города Чуфут-Кале.
                 </p>
@@ -60,11 +61,11 @@
             <img
                     src="./images/история-начало.png"
                     alt="История"
-                    class="story-start-item-img"
+                    class="story-start-item-img wow fadeInRight"
             />
         </div>
         <div class="story-start-item emperor">
-            <div class="story-start-item-obelisk">
+            <div class="story-start-item-obelisk wow fadeInLeft">
                 <img src="./images/обелиск.png" alt="Обелиск" class="obelisk"/>
                 <div class="obelick-text">
                     <h2 class="obelisk-text-title">Мраморный обелиск</h2>
@@ -81,10 +82,10 @@
                 <img
                         src="./images/цари.png"
                         alt="Цари Александр и Николай"
-                        class="story-start-item-emperor-img"
+                        class="story-start-item-emperor-img wow fadeInRight"
                 />
-                <p class="emperor-text aleks">Александр I</p>
-                <p class="emperor-text niko">Николай II</p>
+                <p class="emperor-text wow bounceInRight aleks">Александр I</p>
+                <p class="emperor-text wow bounceInRight niko">Николай II</p>
             </div>
         </div>
     </div>
@@ -95,7 +96,7 @@
 <section class="war">
     <div class="container">
         <div class="war-text">
-            <h2 class="war-text-title">Крымская война</h2>
+            <h2 class="war-text-title typed-out">Крымская война</h2>
             <h2 class="war-text-subtitle">
                 В период Крымской войны территория комлекса неоднократно
                 подвергалась артиллерийскому обстрелу, однако ни одно сооружение не
@@ -113,12 +114,12 @@
 <section class="soviet">
     <div class="container">
         <div class="soviet-text">
-            <h2 class="soviet-text-title">Советские годы</h2>
-            <h2 class="soviet-text-subtitle">
+            <h2 class="soviet-text-title wow fadeInLeft">Советские годы</h2>
+            <h2 class="soviet-text-subtitle wow fadeInLeft">
                 С приходом советской власти для храма наступили трудные времена
             </h2>
         </div>
-        <div class="soviet-content">
+        <div class="soviet-content wow fadeInRight">
             <p class="soviet-content-text">
                 После Октябрьской революции комплекс закрыли и основали в нем музей
                 краеведения. <br/>
@@ -134,32 +135,47 @@
                 <img
                         src="./images/музей.png"
                         alt="Иконка спортзала"
-                        class="soviet-content-card"
+                        class="soviet-content-card museum"
                 />
+                <div class="soviet-die-museum">
+                    Музей
+                </div>
                 <div class="cirlce"></div>
                 <img
                         src="./images/спортзал.png"
                         alt="Иконка спортзала"
-                        class="soviet-content-card"
+                        class="soviet-content-card gym"
                 />
+                <div class="soviet-die-gym">
+                    Спортивный зал
+                </div>
                 <div class="cirlce"></div>
                 <img
                         src="./images/мед-курсы.png"
                         alt="Иконка мед-курсов"
-                        class="soviet-content-card"
+                        class="soviet-content-card medical"
                 />
+                <div class="soviet-die-medical">
+                   Курсы медсестер
+                </div>
                 <div class="cirlce"></div>
                 <img
                         src="./images/столовая.png"
                         alt="Иконка столовой"
-                        class="soviet-content-card"
+                        class="soviet-content-card food"
                 />
+                <div class="soviet-die-food">
+                    Столовая
+                </div>
                 <div class="cirlce"></div>
                 <img
                         src="./images/закыто.png"
                         alt="Иконка замка"
-                        class="soviet-content-card"
+                        class="soviet-content-card closed"
                 />
+                <div class="soviet-die-closed">
+                     Закрытие комплекса
+                </div>
             </div>
         </div>
     </div>
@@ -167,7 +183,7 @@
 <section class="supervisor">
     <div class="container">
         <div class="supervisor-content">
-            <div class="supervisor-text">
+            <div class="supervisor-text wow fadeInLeft">
                 <h2 class="supervisor-title">
                     С 1991 года руководителем Евпаторийской караимской религиозной
                     общины является Виктор Захарович Тирияки
@@ -183,7 +199,7 @@
                     открыта полностью.
                 </p>
             </div>
-            <div class="supervisor-image">
+            <div class="supervisor-image wow fadeInRight">
                 <img src="./images/старая-фотка-кенрас.png" alt="Кенрас"/>
             </div>
         </div>
@@ -191,10 +207,10 @@
             <img src="./images/круг-для-старого-входа.png" alt="Круг"/>
         </div>
         <div class="supervisor-avatar">
-            <img src="./images/терияки.png" alt="Фото Виктора Терияки"/>
+            <img src="./images/терияки.png" alt="Фото Виктора Терияки" class="wow fadeIn"/>
         </div>
         <div class="complex">
-            <div class="complex-text">
+            <div class="complex-text wow fadeInLeft">
                 <h2 class="supervisor-title complex-text-title">
                     Комплекс кенас — <br/>
                     памятник архитектуры XVIII в. государственного значения
@@ -206,7 +222,7 @@
                     под названием «Караман».
                 </p>
             </div>
-            <div class="complex-image">
+            <div class="complex-image wow fadeInRight">
                 <img src="./images/памятник.png" alt="Памятник архитектуры"/>
             </div>
         </div>
@@ -229,16 +245,9 @@
     </div>
     <p class="footer-text">г. Евпатория, ул. Караимская, 68</p>
 </footer>
-<script
-        type="text/javascript"
-        src="//code.jquery.com/jquery-1.11.0.min.js"
-></script>
-<script
-        type="text/javascript"
-        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-></script>
 <script src="slider/jquery-3.6.3.min.js"></script>
 <script src="slider/slick.min.js"></script>
+<script src="script/wow.min.js"></script>
 <script src="script/script.js"></script>
 </body>
 </html>
