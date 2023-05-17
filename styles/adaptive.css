@@ -1,0 +1,50 @@
+/*!*Медиа запрос от 1920px к 1440px*!*/
+
+/*@media screen and (max-width: 1880px) {*/
+/*    .header {*/
+/*        padding: 60px 0 0 100px;*/
+/*    }*/
+
+/*    .karaites-title {*/
+/*        font-size: 90px;*/
+/*        left: 3%;*/
+/*        top: -4%;*/
+/*    }*/
+
+/*    .ladder-image img {*/
+/*        max-width: 1000px;*/
+/*    }*/
+
+/*    .ladder-buttons {*/
+/*        top: 0;*/
+/*        left: 58%;*/
+/*        box-sizing: border-box;*/
+/*    }*/
+
+/*    .ladder-btn {*/
+/*        font-size: 60px;*/
+/*        display: flex;*/
+/*        position: relative;*/
+/*    }*/
+
+/*    .ladder-btn.architecture {*/
+/*        width: 600px;*/
+/*    }*/
+
+/*    .ladder-btn.story {*/
+/*        width: 566px;*/
+/*    }*/
+
+/*    .ladder-btn.story img {*/
+/*        margin: 0 100px;*/
+/*    }*/
+
+/*    .ladder-btn.excursions {*/
+/*        width: 510px;*/
+/*    }*/
+
+/*    .quote-text {*/
+/*        top: 30%;*/
+/*        left: 19%;*/
+/*    }*/
+/*}*/

@@ -66,6 +66,12 @@ body {
     padding: 60px 0 0 165px;
 }
 
+.header.kenasi {
+    background-image: url("../images/фон-градиент.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
 .header .container {
     display: flex;
     column-gap: 180px;
@@ -109,7 +115,7 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 22%;
+    left: 14%;
     top: -8%;
 }
 
@@ -1430,10 +1436,65 @@ body {
     transition: transform .5s ease;
 }
 
-.btn:hover {
-    transform: scale(1.2);
+.map-item-btn-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(55, 61, 61);
+}
+
+.map-item-btn-circle.cafe {
+    position: absolute;
+    top: 54%;
+    left: 39%;
     cursor: pointer;
 }
+
+.map-item-btn-circle.cafe:hover + .btn.cafe {
+    transform: scale(1.2);
+
+}
+
+.map-item-btn-circle.grape {
+    position: absolute;
+    top: 65%;
+    left: 33%;
+    cursor: pointer;
+}
+
+.map-item-btn-circle.grape:hover + .btn.grape {
+    transform: scale(1.2);
+
+}
+
+.map-item-btn-circle.memorial {
+    position: absolute;
+    top: 53%;
+    left: 12%;
+    cursor: pointer;
+}
+
+.map-item-btn-circle.memorial:hover + .btn.memorial {
+    transform: scale(1.2);
+
+}
+
+.map-item-btn-circle.ritual {
+    position: absolute;
+    top: 86%;
+    left: 28%;
+    cursor: pointer;
+}
+
+.map-item-btn-circle.ritual:hover + .btn.ritual {
+    transform: scale(1.2);
+
+}
+
+/*.btn:hover {*/
+/*    !*transform: scale(1.2);*!*/
+/*    cursor: pointer;*/
+/*}*/
 
 .map-complex-excursions {
     display: flex;
@@ -1537,6 +1598,8 @@ body {
 .mode {
     padding-top: 170px;
     position: relative;
+    background-image: url("../images/экскурс-фон.png");
+    z-index: -2;
 }
 
 .mode-title {
