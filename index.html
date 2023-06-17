@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="slider/slick-theme.css"/>
     <link rel="stylesheet" href="slider/slick.css"/>
+    <link rel="stylesheet" href="styles/animate.min.css"/>
     <link rel="stylesheet" href="styles/index.css"/>
     <title>Главная</title>
 </head>
@@ -45,18 +46,18 @@
 <section class="ladder">
     <div class="container">
         <div class="ladder-image">
-            <img src="images/лестница.png" alt="Лестница"/>
+            <img src="images/лестница.png" alt="Лестница" class="wow backInUp"/>
         </div>
         <div class="ladder-buttons">
-            <button class="ladder-btn architecture">
+            <button class="ladder-btn architecture" id="btn-architecture" onclick="document.location='index3.html'">
                 <img src="images/звезда2.png" alt="Звезда"/>
                 <span>Архитектура</span>
             </button>
-            <button class="ladder-btn story">
+            <button class="ladder-btn story" onclick="document.location='index2.html'">
                 <img src="images/звезда2.png" alt="Звезда"/>
                 <span>История</span>
             </button>
-            <button class="ladder-btn excursions">
+            <button class="ladder-btn excursions" onclick="document.location='index4.html'">
                 <img src="images/звезда2.png" alt="Звезда"/>
                 <span>Экскурсии</span>
             </button>
@@ -82,10 +83,10 @@
     <div class="container">
         <img src="images/лого-оранж.png" alt="Логотип" class="footer-logo">
         <ul class="footer-list">
-            <li class="footer-list-item">Главная</li>
-            <li class="footer-list-item">История</li>
-            <li class="footer-list-item">Архитектура</li>
-            <li class="footer-list-item">Экскурсии</li>
+            <li class="footer-list-item"><a href="index.html">Главная</a></li>
+            <li class="footer-list-item"><a href="index2.html">История</a></li>
+            <li class="footer-list-item"><a href="index3.html">Архитектура</a></li>
+            <li class="footer-list-item"><a href="index4.html">Экскурсии</a></li>
         </ul>
         <img src="images/вхутеин-лого.png" alt="Логотип института" class="footer-logo-institute">
     </div>
@@ -93,8 +94,10 @@
 </footer>
 <script src="slider/jquery-3.6.3.min.js"></script>
 <script src="slider/slick.min.js"></script>
+<script src="script/wow.min.js"></script>
 <script src="script/typeIT.js"></script>
 <script src="vendor/typeit.js"></script>
+
 <script src="script/script.js"></script>
 </body>
 </html>
